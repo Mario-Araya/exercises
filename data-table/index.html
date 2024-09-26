@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Table</title>
+    <link rel="stylesheet" href="../data-table/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+
+        <!-- Controls for search and adding user -->
+         <div class="controls">
+            <input type="text" id="search" placeholder="Search by username, email or phone">
+            <button id="addUserBtn">Add User</button>
+         </div>
+
+         <!-- Table displaying user information -->
+          <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                <tr>
+                    <td>JohnDoe</td>
+                    <td>john@example.com</td>
+                    <td>+123456789</td>
+                    <td>Active</td>
+                    <td class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                        <button class="toggle">Deactivate</button>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+
+          <div id="userModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="closeBtn">&times;</span>
+                <h2 id="modalTitle">Add User</h2>
+                <form id="userForm">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" placeholder="Enter username" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter email" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" placeholder="Enter phone number" required>
+                    </div>
+        
+                    <div class="form-actions">
+                        <button type="submit" id="saveUserBtn" class="save-btn">Save</button>
+                        <button type="button" id="cancelBtn" class="cancel-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <script src="../data-table/js/data-table.js"></script>
+</body>
+</html>
