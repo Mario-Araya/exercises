@@ -4,44 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iphone Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <h1>Iphone Calculator</h1>
     <p>We offer an accurante and simple calculator to our users</p>
-    <div>
-        <input placeholder="0"><br>
-        <table>
+    <div class="Calculator-container">
+        <input class="input" id="input" placeholder="0"><br>
+        <table id="calculatorTable">
             <thead>
                 <tr>
-                    <td>C</td>
-                    <td>+/-</td>
-                    <td>%</td>
-                    <td>/</td>
+                    <td><button class="lightButton operatorButton">C</button></td>
+                    <td><button class="lightButton operatorButton">+/-</button></td>
+                    <td><button class="lightButton operatorButton">%</button></td>
+                    <td><button class="accentButton operatorButton">/</button></td>
                 </tr>
                 <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>X</td>
+                    <td><button class="digitButton">7</button></td>
+                    <td><button class="digitButton">8</button></td>
+                    <td><button class="digitButton">9</button></td>
+                    <td><button class="accentButton operatorButton">X</button></td>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>-</td>
+                    <td><button class="digitButton">4</button></td>
+                    <td><button class="digitButton">5</button></td>
+                    <td><button class="digitButton">6</button></td>
+                    <td><button class="accentButton operatorButton">-</button></td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>+</td>
+                    <td><button class="digitButton">1</button></td>
+                    <td><button class="digitButton">2</button></td>
+                    <td><button class="digitButton">3</button></td>
+                    <td><button class="accentButton operatorButton">+</button></td>
                 </tr>
                 <tr>
-                    <td>0</td>
-                    <td>.</td>
-                    <td>=</td>
+                    <td colspan="2"><button class="zeroButton digitButton">0</button></td>
+                    <td><button class="digitButton">.</button></td>
+                    <td><button class="accentButton operatorButton">=</button></td>
                 </tr>
             </thead>
         </table>
@@ -49,10 +50,10 @@
     <footer>
         <p>Social Media</p>
         <ul>
-            <li><a href="https://www.facebook.com/mariofernando.arayaroyo/">Facebook</a></li>
-            <li><a href="https://www.instagram.com/marioa_06/">Instagram</a></li>
-            <li><a href="https://x.com/Marioadev">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/mario-araya/">Linkedin</a></li>
+            <li><a href="https://www.facebook.com/mariofernando.arayaroyo/"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.instagram.com/marioa_06/"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://x.com/Marioadev"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/mario-araya/"><i class="fab fa-linkedin"></i> Linkedin</a></li>
         </ul>
     </footer>
 </body>

@@ -1,0 +1,7 @@
+#calculatorTable{
+    background-color: black;
+}
+
+input[type='text'] {
+    border: 1px solid black;
+}

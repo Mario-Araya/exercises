@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  header {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  
+  h1 {
+    font-size: 56px;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  
+  .Calculator-container {
+    padding: 24px 12px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - (12px * 2));
+    border-radius: 20px;
+  
+  }
+  
+  @media (min-width: 400px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+    }
+  }
+  
+  .calculatorTable {
+    width: 100%;
+    max-width: 340px;
+  }
+  
+  .input {
+    border: none;
+    text-align: right;
+    background-color: black;
+    color: white;
+    width: calc(100% - (10px * 2));
+    font-size: 60px;
+    margin-bottom: 16px;
+    padding: 0px 10px;
+  }
+  
+  
+  ::-webkit-input-placeholder {
+    color: white;
+  }
+  
+  button {
+    border-radius: 60px;
+    border: none;
+    margin: 2px;
+    transition: background-color 0.3s;
+    width: 75px;
+    height: 75px;
+    font-size: 24px;
+    font-weight: 250;
+    background-color: #333333;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .lightButton {
+    background-color: #a6a6a6;
+    color: black;
+  }
+  
+  .accentButton {
+    background-color: orange;
+    color: white;
+  }
+  
+  .zeroButton {
+    width: 95%;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    bottom: 0;
+    width: calc(100% - 20px);
+    margin-top: 40px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  footer p:first-child {
+    font-size: 24px;
+  }
+  
+  footer p:last-child {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1) translateY(0px);
+  }
+  
+  li:hover {
+    transform: scale(1.1) translateY(-5px);
+  }
+  
+  @media (min-width: 400px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+    }
+  
+    .calculator-container {
+        border-radius: 32px;
+        padding: 40px 20px 30px;
+        max-width: 340px;
+    }
+  
+    button {
+        width: 80px;
+        height: 80px;
+    }
+  }
