@@ -64,6 +64,6 @@ function handleOperator(operator) {
             break;
         default:
             operationFunction(operator);
-            break;
+            break
     }
 }
